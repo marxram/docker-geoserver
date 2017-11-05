@@ -117,3 +117,6 @@ RUN if [ "$TOMCAT_EXTRAS" = false ]; then \
 
 # Delete resources after installation
 RUN rm -rf /tmp/resources
+
+# Volume for Kitematic
+VOLUME ["/opt/geoserver/data_dir"]
